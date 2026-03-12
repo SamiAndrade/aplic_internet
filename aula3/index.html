@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orkut - meu perfil</title>
+    <style>
+        body { background-color: #E5ECF9; font-family: Arial, sans-serif; margin: 0; font-size: 13px; }
+        .navbar {color: white;}
+        a { color: #003399; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        
+        header { background-color: #5588CC; color: white; padding: 5px 10%; display: flex; justify-content: space-between; }
+        
+        main { width: 850px; margin: 20px auto; display: grid; grid-template-columns: 200px 1fr; gap: 20px; }
+        
+        aside { display: flex; flex-direction: column; gap: 15px; }
+        .profile-box { background: white; border: 1px solid #BFD0EA; padding: 10px; text-align: center; }
+        .nav-links { list-style: none; padding: 0; margin: 0; }
+        .nav-links li { padding: 3px 0; }
+
+        section { display: flex; flex-direction: column; gap: 15px; }
+        .status-box { background: #BFD0EA; border: 1px solid #7B97D4; padding: 15px; }
+        .info-box { background: white; border: 1px solid #BFD0EA; padding: 15px; position: relative; }
+        
+        .badges { color: #666; font-size: 12px; }
+        .badge-icon { font-size: 14px; }
+
+        .friends-grid { background: white; border: 1px solid #BFD0EA; }
+        .friends-header { background: #D9E6F7; padding: 5px 10px; display: flex; justify-content: space-between; font-weight: bold; }
+        .friends-content { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; padding: 10px; text-align: center; }
+        .friend-pic { width: 50px; height: 50px; background: #DDD; margin: 0 auto 5px; }
+
+        footer { text-align: center; padding: 30px; color: #666; font-size: 11px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="" class="navbar"><b>Página inicial</b></a>| <a href="" class="navbar">Perfil</a> | <a href="" class="navbar">Amigos</a> | <a href="" class="navbar">Comunidades</a> |
+        </nav>
+        <div>
+            usuario@email.com | <a href="#" style="color: white;">Sair</a>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <article class="profile-box">
+                <div style="width: 150px; height: 180px; background: #EEE; border: 1px solid #CCC; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center;">
+                    <span style="color: #999;">Sua Foto</span>
+                </div>
+                <strong style="color: #003399;">João Silva</strong><br>
+                <span style="font-size: 11px; color: #666;">Masculino, 25 anos<br>João Pessoa, Brasil</span>
+            </article>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">perfil</a></li>
+                    <li><a href="#">recados</a> (2)</li>
+                    <li><a href="#">fotos</a> (15)</li>
+                    <li><a href="#">vídeos</a> (3)</li>
+                    <li><a href="#">depoimentos</a> (1)</li>
+                    <hr color="#BFD0EA" size="1">
+                    <li><a href="#">configurações</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section>
+            <article class="status-box">
+                <h2 style="margin:0; font-size: 18px; color: #003399;">bom dia, flor do dia! 🌻</h2>
+            </article>
+
+            <article class="info-box">
+                <div class="badges">
+                    <b>Confiável:</b> <span class="badge-icon" style="color: #FFCC00;">●●●●●</span><br>
+                    <b>Legal:</b> <span class="badge-icon" style="color: #00CC00;">●●●</span><br>
+                    <b>Sexy:</b> <span class="badge-icon" style="color: #FF0088;">●●</span><br>
+                    <b>Fã:</b> <span style="color: #003399;">12</span>
+                </div>
+                <div style="position: absolute; bottom: 10px; right: 10px; font-size: 10px; color: #999;">
+                    Sorte de hoje: A paciência é a chave de todas as portas.
+                </div>
+            </article>
+
+            <article class="friends-grid">
+                <div class="friends-header">
+                    <span>meus amigos (42)</span>
+                    <a href="#" style="font-size: 11px; font-weight: normal;">ver todos</a>
+                </div>
+                <div class="friends-content">
+                    <div><div class="friend-pic"></div><a href="#" style="font-size: 11px;">Maria</a></div>
+                    <div><div class="friend-pic"></div><a href="#" style="font-size: 11px;">Carlos</a></div>
+                    <div><div class="friend-pic"></div><a href="#" style="font-size: 11px;">Ana</a></div>
+                    <div><div class="friend-pic"></div><a href="#" style="font-size: 11px;">Felipe</a></div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2004-2014 Google - <a href="#">Privacidade</a> - <a href="#">Termos</a> - <a href="#">Ajuda</a>
+    </footer>
+
+</body>
+</html>
