@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orkut - Meu Perfil</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Orkut</h1>
+      <nav aria-label="Menu principal">
+        <a href="#" accesskey="1">Início</a> |
+        <a href="#" accesskey="2">Perfil</a> |
+        <a href="#" accesskey="3">Amigos</a> |
+        <a href="#" accesskey="4">Comunidades</a>
+      </nav>
+      <p>usuario@email.com | <a href="#">Sair</a></p>
+    </header>
+
+    <main>
+      <aside>
+        <section>
+          <figure>
+            <img 
+              src="https://via.placeholder.com/150?text=Foto" 
+              alt="Foto de perfil de João Silva"
+              width="150"
+              height="150"
+            >
+            <figcaption><strong>João Silva</strong></figcaption>
+          </figure>
+
+          <form>
+            <fieldset>
+              <legend>Atualizar foto de perfil</legend>
+              <label for="foto">Escolher nova foto:</label><br>
+              <input type="file" id="foto" name="foto" accept="image/*" required>
+              <button type="submit">Enviar</button>
+            </fieldset>
+          </form>
+
+          <p>
+            Masculino, 25 anos<br>
+            João Pessoa, Brasil
+          </p>
+        </section>
+
+        <nav aria-label="Menu do perfil">
+          <ul>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Recados</a> (2)</li>
+            <li><a href="#">Fotos</a> (15)</li>
+            <li><a href="#">Vídeos</a> (3)</li>
+            <li><a href="#">Depoimentos</a> (1)</li>
+            <li><a href="#">Configurações</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section>
+        <article>
+          <header>
+            <h2>João Silva</h2>
+            <p>Status: bom dia, flor do dia 🌻</p>
+          </header>
+        </article>
+
+        <article>
+          <h3>Deixar recado</h3>
+          <form>
+            <fieldset>
+              <legend>Escrever recado</legend>
+
+              <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required minlength="3">
+              </p>
+
+              <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+              </p>
+
+              <p>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" required minlength="5"></textarea>
+              </p>
+
+              <button type="submit">Publicar recado</button>
+            </fieldset>
+          </form>
+        </article>
+
+        <article>
+          <h3>Últimos recados</h3>
+          <ul>
+            <li><strong>Maria:</strong> Oi João! Vamos sair hoje?</li>
+            <li><strong>Carlos:</strong> Partiu jogar mais tarde!</li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Vídeo recente</h3>
+          <figure>
+            <video controls width="100%" aria-describedby="desc-video">
+              <source src="./5118032-hd_1920_1080_24fps.mp4" type="video/mp4">
+              <track src="legendas-pt.vtt" kind="subtitles" srclang="pt" label="Português" default>
+              Seu navegador não suporta a reprodução deste vídeo.
+            </video>
+            <figcaption id="desc-video">Hoje o dia foi de jogar na lanhouse</figcaption>
+          </figure>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2004-2014 Orkut - <a href="#">Privacidade</a> - <a href="#">Termos</a> - <a href="#">Ajuda</a></p>
+    </footer>
+  </body>
+</html>
